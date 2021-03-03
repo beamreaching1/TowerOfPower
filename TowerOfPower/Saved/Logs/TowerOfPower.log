@@ -2523,3 +2523,46 @@ Total execution time: 49.04 seconds
 [2021.03.03-05.41.45:781][724]AssetCheck: New page: Asset Save: multiple assets
 [2021.03.03-05.41.45:782][724]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
 [2021.03.03-05.41.45:782][724]LogContentValidation: Display: Validating World /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2021.03.03-05.59.14:325][945]LogAudioMixer: Resetting audio stream to device id 
+[2021.03.03-05.59.14:343][945]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.03-05.59.14:343][945]LogAudioMixer: Display: 1: FrontRight
+[2021.03.03-09.00.43:968][949]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2021.03.03-09.00.43:968][949]LogAudioMixer: Resetting audio stream to device id 
+[2021.03.03-09.00.44:005][949]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.03-09.00.44:005][949]LogAudioMixer: Display: 1: FrontRight
+[2021.03.03-09.00.50:008][967]LogAudioMixer: Resetting audio stream to device id 
+[2021.03.03-09.00.50:024][967]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.03-09.00.50:024][967]LogAudioMixer: Display: 1: FrontRight
+[2021.03.03-20.27.56:504][969]LogHttp: Warning: 000001EC60D58100: HTTP request timed out after 41235.53 seconds URL=https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD1D67617-4DB0-0DF5-DE65-948008AB0A48%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.1-15228867%2B%2B%2BUE4%2BRelease-4.26&UserID=2574f6634d8f5a37eca98db28f46bd3c%7Ca7a6a188176e416e8b9ce71c7dce923f%7Cedc70a01-daef-4e4b-89a0-5c247e54426d&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.03.03-20.27.57:941][969]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2021.03.03-20.27.57:941][969]LogHttp: Warning: 000001EC60D58100: request failed, libcurl error: 0 (No error)
+[2021.03.03-20.27.57:941][969]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x1ec6f44e7a0 [can pipeline])
+[2021.03.03-20.27.57:941][969]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 1 (Re-using existing connection! (#3) with host datarouter.ol.epicgames.com)
+[2021.03.03-20.27.57:941][969]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (34.236.52.11) port 443 (#3))
+[2021.03.03-20.27.57:941][969]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 3 (We are completely uploaded and fine)
+[2021.03.03-20.27.57:941][969]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 4 (Closing connection 3)
+[2021.03.03-20.27.57:941][969]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 5 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2021.03.03-20.27.57:941][969]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD1D67617-4DB0-0DF5-DE65-948008AB0A48%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.1-15228867%2B%2B%2BUE4%2BRelease-4.26&UserID=2574f6634d8f5a37eca98db28f46bd3c%7Ca7a6a188176e416e8b9ce71c7dce923f%7Cedc70a01-daef-4e4b-89a0-5c247e54426d&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.03.03-20.27.57:957][969]LogAudioMixer: Resetting audio stream to device id 
+[2021.03.03-20.27.57:984][969]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.03-20.27.57:984][969]LogAudioMixer: Display: 1: FrontRight
+[2021.03.03-20.27.58:283][971]LogHttp: Warning: 000001EC60D58100: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD1D67617-4DB0-0DF5-DE65-948008AB0A48%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.1-15228867%2B%2B%2BUE4%2BRelease-4.26&UserID=2574f6634d8f5a37eca98db28f46bd3c%7Ca7a6a188176e416e8b9ce71c7dce923f%7Cedc70a01-daef-4e4b-89a0-5c247e54426d&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.03.03-20.27.58:283][971]LogHttp: Warning: 000001EC60D58100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2021.03.03-20.27.58:283][971]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2021.03.03-20.27.58:283][971]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 1 (Closing connection 4)
+[2021.03.03-20.27.58:283][971]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD1D67617-4DB0-0DF5-DE65-948008AB0A48%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.1-15228867%2B%2B%2BUE4%2BRelease-4.26&UserID=2574f6634d8f5a37eca98db28f46bd3c%7Ca7a6a188176e416e8b9ce71c7dce923f%7Cedc70a01-daef-4e4b-89a0-5c247e54426d&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.03.03-20.29.42:895][282]LogHttp: Warning: 000001EC60D58100: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD1D67617-4DB0-0DF5-DE65-948008AB0A48%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.1-15228867%2B%2B%2BUE4%2BRelease-4.26&UserID=2574f6634d8f5a37eca98db28f46bd3c%7Ca7a6a188176e416e8b9ce71c7dce923f%7Cedc70a01-daef-4e4b-89a0-5c247e54426d&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.03.03-20.29.42:895][282]LogHttp: Warning: 000001EC60D58100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2021.03.03-20.29.42:895][282]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2021.03.03-20.29.42:895][282]LogHttp: Warning: 000001EC60D58100: libcurl info message cache 1 (Closing connection 5)
+[2021.03.03-20.29.43:192][283]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD1D67617-4DB0-0DF5-DE65-948008AB0A48%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.1-15228867%2B%2B%2BUE4%2BRelease-4.26&UserID=2574f6634d8f5a37eca98db28f46bd3c%7Ca7a6a188176e416e8b9ce71c7dce923f%7Cedc70a01-daef-4e4b-89a0-5c247e54426d&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.03.03-21.02.36:992][140]LogD3D11RHI: Error: Device->CreateBuffer(&Desc, NULL, UniformBufferResource.GetInitReference()) failed 
+ at D:/Build/++UE4/Sync/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11UniformBuffer.cpp:150 
+ with error DXGI_ERROR_DEVICE_REMOVED DXGI_ERROR_DEVICE_REMOVED
+[2021.03.03-21.02.36:992][140]LogD3D11RHI: [Aftermath] GDynamicRHI=000001EC6D38BA40, GDX11NVAfterMathEnabled=0, Result=0xFFFFFFFF, bDeviceActive=0
+[2021.03.03-21.02.37:002][140]LogWindows: Windows GetLastError: The operation completed successfully. (0)
+[2021.03.03-21.02.39:166][140]LogWindows: FPlatformMisc::RequestExit(0)
+[2021.03.03-21.02.39:166][140]LogCore: Engine exit requested (reason: Win RequestExit)
+[2021.03.03-21.02.39:166][140]LogWindows: FPlatformMisc::RequestExit(1)
+[2021.03.03-21.02.39:166][140]LogCore: Engine exit requested (reason: Win RequestExit; note: exit was already requested)
+[2021.03.03-21.02.39:170][140]Log file closed, 03/03/21 16:02:39
