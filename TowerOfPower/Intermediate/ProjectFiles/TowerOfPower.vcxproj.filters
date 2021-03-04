@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TowerOfPower.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{8F129C77-369C-4288-82CD-7BCBB979C6D7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TowerOfPower.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TowerOfPowerEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{087F2D05-0597-4CE1-A49B-74DA23DE79FB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TowerOfPower">
+      <UniqueIdentifier>{83DD00B6-164F-49CC-8922-2A800947F160}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TowerOfPower\Golem.cpp">
+      <Filter>Source\TowerOfPower</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TowerOfPower\Golem.h">
+      <Filter>Source\TowerOfPower</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\TowerOfPower\TowerOfPower.Build.cs">
+      <Filter>Source\TowerOfPower</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TowerOfPower\TowerOfPower.cpp">
+      <Filter>Source\TowerOfPower</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TowerOfPower\TowerOfPower.h">
+      <Filter>Source\TowerOfPower</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
