@@ -4,3 +4,5 @@ TowerOfPower/Intermediate/*
 TowerOfPower/Binaries/*
 TowerOfPower/Saved/*
 TowerOfPower/Saved/Logs/*
+*.log
+*.log
