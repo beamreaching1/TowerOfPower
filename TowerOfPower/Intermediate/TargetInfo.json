@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TowerOfPower",
+			"Path": "C:\\Users\\wagne\\Desktop\\GitHub\\TowerOfPower\\TowerOfPower\\Source\\TowerOfPower.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TowerOfPowerEditor",
+			"Path": "C:\\Users\\wagne\\Desktop\\GitHub\\TowerOfPower\\TowerOfPower\\Source\\TowerOfPowerEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

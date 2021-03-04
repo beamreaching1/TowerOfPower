@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-TowerOfPower-0006.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Intermediate\Build\Win64\TowerOfPowerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Intermediate\Build\Win64\UE4Editor\Development\TowerOfPower\Golem.cpp.obj"
+"C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Intermediate\Build\Win64\UE4Editor\Development\TowerOfPower\TowerOfPower.cpp.obj"
+"C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Intermediate\Build\Win64\UE4Editor\Development\TowerOfPower\Golem.gen.cpp.obj"
+"C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Intermediate\Build\Win64\UE4Editor\Development\TowerOfPower\TowerOfPower.init.gen.cpp.obj"
+"C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Intermediate\Build\Win64\UE4Editor\Development\TowerOfPower\Default.rc2.res"
+/OUT:"C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Intermediate\Build\Win64\UE4Editor\Development\TowerOfPower\UE4Editor-TowerOfPower-0006.lib"
+/INCLUDE:IMPLEMENT_MODULE_TowerOfPower

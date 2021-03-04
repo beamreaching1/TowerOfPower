@@ -1,0 +1,2 @@
+C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Intermediate\Build\Win64\UE4Editor\Development\TowerOfPower\Definitions.TowerOfPower.h
+C:\Users\wagne\Desktop\GitHub\TowerOfPower\TowerOfPower\Source\TowerOfPower\TowerOfPower.h
