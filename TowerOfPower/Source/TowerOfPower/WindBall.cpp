@@ -79,8 +79,10 @@ void AWindBall::FireInDirection(const FVector& ShootDirection) {
 
 // Function that is called when the projectile hits something.
 void AWindBall::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) {
-	if (OtherActor != this && OtherComponent->IsSimulatingPhysics()) {
+	if (!Inverse && OtherActor != this && OtherComponent->IsSimulatingPhysics()) {
 		OtherComponent->AddImpulseAtLocation(ProjectileMovementComponent->Velocity * 500.0f, Hit.ImpactPoint);
+	} else if (Inverse && OtherActor != this && OtherComponent->IsSimulatingPhysics()) {
+		OtherComponent->AddImpulseAtLocation(ProjectileMovementComponent->Velocity * -500.0f, Hit.ImpactPoint);
 	}
 
 	Destroy();

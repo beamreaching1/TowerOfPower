@@ -72,7 +72,8 @@ void AGolem::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) {
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AGolem::StopJump);
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AGolem::StartSprint);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AGolem::StopSprint);
-	PlayerInputComponent->BindAction("Shoot1", IE_Pressed, this, &AGolem::Fire);
+	PlayerInputComponent->BindAction<FFireDelegate>("Shoot1", IE_Pressed, this, &AGolem::Fire, false);
+	PlayerInputComponent->BindAction<FFireDelegate>("Shoot2", IE_Pressed, this, &AGolem::Fire,true);
 }
 
 void AGolem::MoveForward(float Value) {
@@ -103,7 +104,7 @@ void AGolem::StopSprint() {
 	GetCharacterMovement()->MaxWalkSpeed /= sprintMul;
 }
 
-void AGolem::Fire() {
+void AGolem::Fire(bool Invert) {
 	// Attempt to fire a projectile.
 	if (ProjectileClass)
 	{
@@ -120,7 +121,7 @@ void AGolem::Fire() {
 
 		// Skew the aim to be slightly upwards.
 		FRotator MuzzleRotation = CameraRotation;
-		MuzzleRotation.Pitch += 10.0f;
+		MuzzleRotation.Pitch += 1.0f;
 
 		UWorld* World = GetWorld();
 		if (World)
@@ -131,9 +132,9 @@ void AGolem::Fire() {
 
 			// Spawn the projectile at the muzzle.
 			AWindBall* Projectile = World->SpawnActor<AWindBall>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
-			if (Projectile)
-			{
+			if (Projectile) {
 				// Set the projectile's initial trajectory.
+				Projectile->Inverse = Invert;
 				FVector LaunchDirection = MuzzleRotation.Vector();
 				Projectile->FireInDirection(LaunchDirection);
 			}

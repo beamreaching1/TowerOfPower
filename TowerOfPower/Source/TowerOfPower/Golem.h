@@ -61,7 +61,9 @@ public:
 
 	// Function that handles firing projectiles.
 	UFUNCTION()
-		void Fire();
+		void Fire(bool Invert);
+	DECLARE_DELEGATE_OneParam(FFireDelegate, bool);
+
 	// Gun muzzle offset from the camera location.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 		FVector MuzzleOffset;
