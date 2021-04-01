@@ -78,8 +78,8 @@ void AGolem::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) {
 
 void AGolem::MoveForward(float Value) {
 	// Find out which way is "forward" and record that the player wants to move that way.
-	FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::X);
-	AddMovementInput(Direction, Value);
+	FRotator Direction = FRotator(0.0f, Controller->GetControlRotation().Yaw, 0.0f);
+	AddMovementInput(FRotationMatrix(Direction).GetUnitAxis(EAxis::X), Value);
 }
 
 void AGolem::Strafe(float Value) {
@@ -121,7 +121,7 @@ void AGolem::Fire(bool Invert) {
 
 		// Skew the aim to be slightly upwards.
 		FRotator MuzzleRotation = CameraRotation;
-		MuzzleRotation.Pitch += 1.0f;
+		MuzzleRotation.Pitch += 0.0f;
 
 		UWorld* World = GetWorld();
 		if (World)
