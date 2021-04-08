@@ -17,8 +17,11 @@ class TOWEROFPOWER_API AGolem : public ACharacter {
 public:
 	// Sets default values for this character's properties
 	AGolem();
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Character Movement: Walking");
-	float sprintMul;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Character Movement: Walking")
+		float sprintMul;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character Ability: Switching")
+		int abilitySwitch;
 
 protected:
 	// Called when the game starts or when spawned
@@ -69,11 +72,11 @@ public:
 		FVector MuzzleOffset;
 
 	// FPS camera
-	UPROPERTY(VisibleAnywhere)
-	UCameraComponent* FPSCameraComponent;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+		UCameraComponent* FPSCameraComponent;
 
 	// First-person mesh (arms), visible only to the owning player.
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-	USkeletalMeshComponent* FPSMesh;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Mesh)
+		USkeletalMeshComponent* FPSMesh;
 
 };

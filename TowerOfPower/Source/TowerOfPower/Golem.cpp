@@ -8,7 +8,7 @@ AGolem::AGolem() {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	sprintMul = 1.5f;
-
+	abilitySwitch = 0;
 
 	// Create a first person camera component.
 	FPSCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
@@ -72,14 +72,14 @@ void AGolem::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) {
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AGolem::StopJump);
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AGolem::StartSprint);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AGolem::StopSprint);
-	PlayerInputComponent->BindAction<FFireDelegate>("Shoot1", IE_Pressed, this, &AGolem::Fire, false);
+	PlayerInputComponent->BindAction<FFireDelegate>("Shoot1", IE_Pressed, this, &AGolem::Fire,false);
 	PlayerInputComponent->BindAction<FFireDelegate>("Shoot2", IE_Pressed, this, &AGolem::Fire,true);
 }
 
 void AGolem::MoveForward(float Value) {
 	// Find out which way is "forward" and record that the player wants to move that way.
-	FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::X);
-	AddMovementInput(Direction, Value);
+	FRotator Direction = FRotator(0.0f, Controller->GetControlRotation().Yaw, 0.0f);
+	AddMovementInput(FRotationMatrix(Direction).GetUnitAxis(EAxis::X), Value);
 }
 
 void AGolem::Strafe(float Value) {
@@ -105,9 +105,11 @@ void AGolem::StopSprint() {
 }
 
 void AGolem::Fire(bool Invert) {
+	if (abilitySwitch != 0) {
+		return;
+	}
 	// Attempt to fire a projectile.
-	if (ProjectileClass)
-	{
+	if (ProjectileClass) {
 		// Get the camera transform.
 		FVector CameraLocation;
 		FRotator CameraRotation;
@@ -121,11 +123,10 @@ void AGolem::Fire(bool Invert) {
 
 		// Skew the aim to be slightly upwards.
 		FRotator MuzzleRotation = CameraRotation;
-		MuzzleRotation.Pitch += 1.0f;
+		MuzzleRotation.Pitch += 0.0f;
 
 		UWorld* World = GetWorld();
-		if (World)
-		{
+		if (World) {
 			FActorSpawnParameters SpawnParams;
 			SpawnParams.Owner = this;
 			SpawnParams.Instigator = GetInstigator();
