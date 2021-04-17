@@ -7,7 +7,7 @@
 AGolem::AGolem() {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	sprintMul = 1.5f;
+	sprintMul = 2.0f;
 	abilitySwitch = 0;
 
 	// Create a first person camera component.
